@@ -244,7 +244,6 @@ def main():
             print(f"{testcase_path} does not exist")
             return
         
-        # パスを/local/kusama/APR/LLM_repair/QuixBugsに変更
         os.chdir("../QuixBugs")
                 
         # Javaファイルをコンパイル
@@ -256,7 +255,6 @@ def main():
             return
         
         try:
-            # パスを/local/kusama/APR/LLM_repair/QuixBugsに変更
             os.chdir("../QuixBugs")
             # タイムアウトのハンドラ設定（5秒に設定）
             signal.signal(signal.SIGALRM, handler)
@@ -336,7 +334,7 @@ def main():
             try:
                 # タイムアウトのハンドラ設定（5秒に設定）
                 signal.signal(signal.SIGALRM, handler)
-                # signal.alarm(5)  # 5秒の制限時間
+                signal.alarm(5)  # 5秒の制限時間
                 p1 = subprocess.Popen(["/usr/bin/java", "-cp", ".:../QuixBugs:../QuixBugs/gson-2.8.2.jar", "../QuixBugs/JavaDeserialization.java", args.bug]+ \
                     [json.dumps(arg) for arg in copy.deepcopy(test_in)], stdout=subprocess.PIPE, stderr=subprocess.PIPE,universal_newlines=True)
                 
