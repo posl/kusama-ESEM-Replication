@@ -2,14 +2,14 @@
 
 This repository contains the code used to run the experiments.
 
-### Setup Environment
+### Step0. Setup Environment
 1. Clone the repository or download the project files.
 2. Install the dependencies listed in requierments.txt by running the following command:
 ```
 pip install -r requirements.txt
 ```
 
-### Patch Generation
+### Step1. Patch Generation
 
 You can find the main patch generation logic in `LLM_repair/Repair` folder
 
@@ -44,7 +44,7 @@ python codex_repair --chances 200 --skip_val --folder Results/test_generation
 - weight: Quantization weight type for the model, such as float16. For RQ2, please change this option to experiment with different quantization settings.
 
 
-### Patch Validation
+### Step2. Patch Validation
 
 The validation function can be found in the `LLM_Repair/Dataset` folder with the appropriate function to validate each of the repair datasets.
 
