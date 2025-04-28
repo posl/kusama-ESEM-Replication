@@ -1,4 +1,4 @@
-# How Small is Enough? Empirical Evidence of　Quantized Small Language Models for Automated Program Repair
+# How　Small　is　Enough?　Empirical　Evidence　of　Quantized Small　Language　Models　for　Automated　Program　Repair
 
 This repository contains the code used to run the experiments.
 
@@ -54,3 +54,16 @@ Example usage for the QuixBugs-Python dataset:
 python3 -c "from validate_quixbug import validate_all_patches; validate_all_patches('../Repair/LM/Results/test_generation', 'lm.json')"
 ```
 If you are validating patches generated for the QuixBugs-Java dataset, use validate_quixbug_java instead.
+
+
+### License and Acknowledgements
+
+This project is based on the following works. For more details, please refer to the `LICENSE` file.
+- QuixBugs dataset
+  - Original Author: James Koppel
+  - License: MIT License
+  - URL: https://github.com/jkoppel/QuixBugs?tab=MIT-1-ov-file
+- Replication package of “Automated Program Repair in the Era of Large Pre-Trained Language Models”
+  - Original Author: Xia Chunqiu, Wei Yuxiang, Zhang Lingming
+  - License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+  - URL: https://zenodo.org/records/7622931
