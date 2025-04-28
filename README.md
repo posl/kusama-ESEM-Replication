@@ -47,7 +47,7 @@ python codex_repair --chances 200 --skip_val --folder Results/test_generation
 
 The validation function can be found in the `LLM_Repair/Dataset` folder with the appropriate function to validate each of the repair datasets.
 
-Before validating patches, navigate to the LLM_repair/Dataset directory.
+Before validating patches, navigate to the `LLM_repair/Dataset` directory.
 
 Example usage for the QuixBugs-Python dataset:
 ```
