@@ -41,7 +41,8 @@ python codex_repair --chances 200 --skip_val --folder Results/test_generation
 - chances: Maximum number of patch attempts per bug.
 - skip_val: If set, validation during patch generation is skipped.
 - folder: Directory where the generated patches will be saved.
-- weight: Quantization weight type for the model, such as float16. For RQ2, please modify this option to experiment with different quantization settings.
+- weight: Quantization weight type for the model, such as float16. For RQ2, please change this option to experiment with different quantization settings.
+
 
 ### Patch Validation
 
