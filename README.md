@@ -1,4 +1,4 @@
-# How　Small　is　Enough?　Empirical　Evidence　of　Quantized Small　Language　Models　for　Automated　Program　Repair
+# How Small is Enough? Empirical Evidence of Quantized Small Language Models for Automated Program Repair
 
 This repository contains the code used to run the experiments.
 
