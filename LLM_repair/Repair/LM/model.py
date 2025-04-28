@@ -55,6 +55,10 @@ class LMs(object):
         elif weight == 'int4':
             print("Switching to int4 ...")
             self.model = AutoModelForCausalLM.from_pretrained(pretrained, load_in_4bit=True, device_map="auto", trust_remote_code=True)
+        else:
+            print("No weight type specified or unrecognized weight. Defaulting to float16 ...")
+            self.model = AutoModelForCausalLM.from_pretrained(pretrained, torch_dtype=torch.float16, trust_remote_code=True)
+            self.model.to(self.device)
 
         self.max_length = self.model.config.to_dict().get('max_position_embeddings', 2048)
         # use max position embeddings to determine max length

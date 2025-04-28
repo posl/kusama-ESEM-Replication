@@ -1,3 +1,23 @@
+# -----------------------------------------------------------------------------
+# This project is based on:
+# 
+# 1. QuixBugs dataset
+#    - Original Author: James Koppel
+#    - License: MIT License
+#    - URL: https://github.com/jkoppel/QuixBugs?tab=MIT-1-ov-file
+# 
+# 2. Replication package of "Automated Program Repair in the Era of Large Pre-Trained Language Models"
+#    - Original Author: Xia Chunqiu, Wei Yuxiang, Zhang Lingming
+#    - License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+#    - URL: https://zenodo.org/records/7622931
+# 
+# ----------------------------------------------------------------------------- 
+# This code has undergone minor modifications for the purposes of this experiment.
+# -----------------------------------------------------------------------------
+# Copyright 2017-2019 James Koppel (for QuixBugs dataset)
+# 
+# Licensed under the MIT License. See LICENSE file for full details.
+# -----------------------------------------------------------------------------
 import argparse
 import time
 import openai
