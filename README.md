@@ -21,7 +21,7 @@ cd LLM_repair/Repair/LM
 
 Example usage to run repair:
 ```
-python3 repair.py --model_name EleutherAI/gpt-neo-1.3B --batch_size 10 --dataset quixbugs-python --chances 200 --skip_val  -- weight float16 --folder Results/test_generation
+python3 repair.py --model_name EleutherAI/gpt-neo-1.3B --batch_size 10 --dataset quixbugs-python --chances 200 --skip_val  --weight float16 --folder Results/test_generation
 ```
 This will generate the patches and store them in the specified folder (Results/test_generation).
 
