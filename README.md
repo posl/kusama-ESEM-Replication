@@ -52,7 +52,7 @@ Before validating patches, navigate to the `LLM_repair/Dataset` directory.
 
 Example usage for the QuixBugs-Python dataset:
 ```
-python3 -c "from validate_quixbug import validate_all_patches; validate_all_patches('../Repair/LM/Results/test_generation', 'lm.json')"
+python3 -c "from validate_quixbug import validate_all_patches; validate_all_patches('../Repair/LM/Results/test_generation', 'lm_repair.json')"
 ```
 If you are validating patches generated for the QuixBugs-Java dataset, use validate_quixbug_java instead.
 
